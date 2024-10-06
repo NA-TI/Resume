@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body{
+    background-color: #111318;
+    font-family: Afacad Flux;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 2.5rem;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+header .profile-pic {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .verified-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+header .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header .info .name-icon {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.role {
+    color: #737c92;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+}
+
+.section-top p {
+    color: #737c92;
+}
+
+.border-line {
+    border-bottom: 1px solid #737c92;
+}
+
+.date {
+    color: #537add;
+}
+
+.title {
+    color: white;
+}
+
+.description {
+    color: #737c92;
+}
+
+.section-1 ul li {
+    display: inline-block;
+    padding: .20rem;
+    background-color: #161b27;
+    margin: .5rem;
+    border-radius: .30rem;
+    text-align: center;
+    color: #5b85f2;
+}
+
+footer {
+    width: 100%;
+    text-align: center;  /* Center the footer */
+}
+
+footer a {
+    margin: 0 10px;
+}
