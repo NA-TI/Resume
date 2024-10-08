@@ -25,9 +25,9 @@ body{
 
 header {
     display: flex;
-    align-items: center;
+    align-items: right;
     margin-bottom: 20px;
-    max-width: 900px;
+    max-width: 70rem;
     width: 100%;
 }
 
@@ -60,6 +60,8 @@ header .info .name-icon {
 
 .role {
     color: #737c92;
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 
@@ -69,8 +71,18 @@ section {
     align-items: flex-start;  
     text-align: left;
     width: 100%;
-    max-width: 900px;
+    max-width: 70rem;
+    animation: appear 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
+
+.section-top {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
 
 .section-top p {
     color: #737c92;
@@ -78,6 +90,8 @@ section {
 
 .border-line {
     border-bottom: 1px solid #737c92;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .date {
@@ -86,21 +100,42 @@ section {
 
 .title {
     color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .description {
     color: #737c92;
+    font-size: 1.3rem;
 }
 
 .section-1 ul li {
     display: inline-block;
-    padding: .20rem;
+    padding: .50rem;
     background-color: #161b27;
     margin: .5rem;
     border-radius: .30rem;
     text-align: center;
     color: #5b85f2;
+    width: 7rem;
 }
+
+.sec-1 {
+    margin: .3rem;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.9;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
 
 footer {
     width: 100%;
